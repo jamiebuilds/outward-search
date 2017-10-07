@@ -1,6 +1,6 @@
 {
   "name": "outward-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search an array of items outwards from a starting index",
   "main": "index.js",
   "repository": "https://github.com/thejameskyle/outward-search",
