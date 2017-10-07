@@ -4,7 +4,7 @@
 function outwardSearch/*:: <T> */(
   items /*: Array<T> */,
   start /*: number */,
-  callback /*: (item: T, index: number) => boolean */,
+  callback /*: (item: T, index: number) => boolean */
 ) /*: T | null */ {
   if (!items.length) {
     return null;
