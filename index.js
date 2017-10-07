@@ -1,6 +1,8 @@
 // @flow
 'use strict';
 
+const isSafeInteger = require('is-safe-integer');
+
 function outwardSearch/*:: <T> */(
   items /*: Array<T> */,
   start /*: number */,
@@ -10,8 +12,8 @@ function outwardSearch/*:: <T> */(
     return null;
   }
 
-  if (start < 0 || start > items.length - 1) {
-    throw new Error('starting index must be within bounds of array');
+  if (!isSafeInteger(start) || start < 0 || start > items.length - 1) {
+    throw new TypeError('starting index must be within bounds of array');
   }
 
   let max = items.length - 1;

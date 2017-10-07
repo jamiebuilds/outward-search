@@ -36,3 +36,15 @@ test('start at min', () => {
 test('start at max', () => {
   expect(outwardSearch([0, 1, 2], 2, item => item === 0)).toBe(0);
 });
+
+test('start at NaN', () => {
+  expect(() => {
+    outwardSearch([0, 1, 2], NaN, () => true);
+  }).toThrow();
+});
+
+test('start at Infinity', () => {
+  expect(() => {
+    outwardSearch([0, 1, 2], Infinity, () => true);
+  }).toThrow();
+});

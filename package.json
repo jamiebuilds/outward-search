@@ -22,5 +22,8 @@
   "devDependencies": {
     "flow-bin": "^0.56.0",
     "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "is-safe-integer": "^1.0.2"
   }
 }
