@@ -1,0 +1,26 @@
+{
+  "name": "outward-search",
+  "version": "0.0.0",
+  "description": "Search an array of items outwards from a starting index",
+  "main": "index.js",
+  "repository": "https://github.com/thejameskyle/outward-search",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "keywords": [
+    "search",
+    "array",
+    "find",
+    "binary search",
+    "algorithm"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.56.0",
+    "jest": "^21.2.1"
+  }
+}
